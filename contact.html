@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <img src="images/VirginiaFlag.svg" alt="Flag of Virginia">
+    <p>We’d love to hear from you!</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="richmond.html">Richmond</a></li>
+        <li><a href="virginiabeach.html">Virginia Beach</a></li>
+        <li><a href="norfolk.html">Norfolk</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <div class="main-content">
+        <h1>Get in Touch</h1>
+        <p>Have questions or feedback? We'd love to hear from you! Fill out the form below, and our team will get back to you as soon as possible.</p>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="confirmEmail">Confirm Email:</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm your email">
+            <span id="error-message" class="error"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <aside>
+      <h3>Quick Facts</h3>
+      <ul>
+        <li>Email: support@virginiawebsite.com</li>
+        <li>Phone: (800) 555-VA24</li>
+        <li>Address: 123 Virginia St, Richmond, VA</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Virginia Website - Ander Tillery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
