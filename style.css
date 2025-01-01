@@ -1,0 +1,270 @@
+body {
+  background-color: #00247D;
+  color: white;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #00247D;
+  text-align: center;
+  height: 260px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin: 5px 0 10px 0;
+  color: white;
+}
+
+header img {
+  width: 180px;
+  height: auto;
+  border: 3px solid white;
+  margin: 5px auto;
+}
+
+nav {
+  background-color: #BF0A30;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 15px;
+  display: inline-block;
+  background-color: #BF0A30;
+}
+
+nav ul li a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+main {
+  display: flex;
+  margin-top: 260px;
+  height: calc(100vh - 310px);
+  overflow: hidden;
+  background-color: #00247D;
+}
+
+.content-section {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  margin-right: 275px;
+}
+
+.main-content {
+  background-color: white;
+  color: #00247D;
+  width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 2px solid #00247D;
+  font-family: "Arial", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.main-content h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00247D;
+  font-weight: 600;
+}
+
+.main-content h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #00247D;
+  font-weight: 600;
+}
+
+.main-content p {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.main-content img {
+  max-width: 80%;
+  height: auto;
+  margin: 15px auto;
+  display: block;
+  border: 2px solid #00247D;
+  border-radius: 5px;
+}
+
+.highlights-text {
+  text-align: left;
+  font-size: 0.9rem;
+  color: #00247D;
+  line-height: 1.6;
+  font-family: "Arial", sans-serif;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 2px solid #00247D;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #BF0A30;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4CAF50;
+}
+
+aside {
+  position: fixed;
+  right: 0;
+  top: 260px;
+  height: calc(100vh - 310px);
+  width: 275px;
+  background-color: white;
+  color: #00247D;
+  padding: 30px 20px 20px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  overflow-y: auto;
+  text-align: left;
+  border-left: 3px solid #00247D;
+}
+
+aside h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #00247D;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+aside ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #00247D;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1rem;
+  border-top: 3px solid #BF0A30;
+}
+
+table {
+  width: 100%;
+  margin: 15px auto;
+  border-collapse: collapse;
+  border: 2px solid #00247D;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #00247D;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+table th {
+  background-color: #00247D;
+  color: white;
+}
+
+table td {
+  background-color: #fdfdfd;
+  color: #00247D;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
